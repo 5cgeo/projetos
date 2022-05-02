@@ -83,8 +83,8 @@ const SUBTITLE_STATES = [
 ]
 
 const INIT_ZOOM = {
-    center: [-53.99235736195203, -27.426307807866984],
-    zoom: 4.83
+    center: [-44.8465736, -19.9218291],
+    zoom: 5.5
 }
 
 var PROJECTS = {
