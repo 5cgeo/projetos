@@ -541,9 +541,7 @@ var PROJECTS = {
     },
     'pddmt-2021': {
         title: 'Plano de Desenvolvimento da Doutrina Militar Terrestre 2021',
-        legend: [2,
-            5,
-            3],
+        legend: [1,2,5,6,3],
         description: `O objetivo do presente projeto é elaborar dados geoespaciais para suprir a demanda dos Comandos Militares de Área a serem utilizados em preparo, emprego e doutrina da F Ter.`,
         lotes: [
             {
