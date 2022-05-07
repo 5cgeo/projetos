@@ -588,6 +588,56 @@ var PROJECTS = {
                 ]
             }
         ]
+    },
+    'pddmt-2022-1': {
+        title: 'Plano de Desenvolvimento da Doutrina Militar Terrestre 2022',
+        legend: [1,2,5,6,3],
+        description: `O objetivo do presente projeto é elaborar dados geoespaciais para suprir a demanda dos Comandos Militares de Área a serem utilizados em preparo, emprego e doutrina da F Ter.`,
+        lotes: [
+            {
+                name: 'pddmt-2022-1',
+                subtitle: '',
+                zoom: [
+                    [-49.9306, -24.4235],
+                    [-38.4782, -17.4558]
+                ],
+                styles: [
+                    {
+                        'id': 'pddmt-2022-1-fill',
+                        'source': 'pddmt-2022-1',
+                        'type': 'fill',
+                        'layout': {},
+                        'paint': {
+                            'fill-opacity': 0.9
+                        }
+                    },
+                    {
+                        'id': 'pddmt-2022-1-border',
+                        'source': 'pddmt-2022-1',
+                        'type': 'line',
+                        'layout': {},
+                        'paint': {
+                            'line-color': '#050505',
+                            'line-width': 0.5
+                        }
+                    },
+                    {
+                        'id': 'pddmt-2022-1-text',
+                        'source': 'pddmt-2022-1',
+                        "type": "symbol",
+                        "maxzoom": 10,
+                        "minzoom": 7.4,
+                        'layout': {
+                            'text-field': ['to-string', ['get', 'identificador']]
+
+                        },
+                        'paint': {
+
+                        }
+                    }
+                ]
+            }
+        ]
     }
         
 }
