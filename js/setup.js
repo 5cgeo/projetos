@@ -688,6 +688,56 @@ var PROJECTS = {
                 ]
             }
         ]
+    },
+    'map-int-ft-2022': {
+        title: 'Mapeamento de Interesse da Força Terrestre 2022',
+        legend: [1,2,5,6,3],
+        description: `O objetivo do presente projeto é elaborar cartas ortoimagem na escala 1:25.000 em parte do estado do Espírito Santo, considerada como área de Interesse da Força Terrestre.`,
+        lotes: [
+            {
+                name: 'map-int-ft-2022',
+                subtitle: '',
+                zoom: [
+                    [-42.44879, -19.40370],
+                    [-39.4004, -21.6131]
+                ],
+                styles: [
+                    {
+                        'id': 'map-int-ft-2022-fill',
+                        'source': 'map-int-ft-2022',
+                        'type': 'fill',
+                        'layout': {},
+                        'paint': {
+                            'fill-opacity': 0.9
+                        }
+                    },
+                    {
+                        'id': 'map-int-ft-2022-border',
+                        'source': 'map-int-ft-2022',
+                        'type': 'line',
+                        'layout': {},
+                        'paint': {
+                            'line-color': '#050505',
+                            'line-width': 0.5
+                        }
+                    },
+                    {
+                        'id': 'map-int-ft-2022-text',
+                        'source': 'map-int-ft-2022',
+                        "type": "symbol",
+                        "maxzoom": 10,
+                        "minzoom": 7.4,
+                        'layout': {
+                            'text-field': ['to-string', ['get', 'identificador']]
+
+                        },
+                        'paint': {
+
+                        }
+                    }
+                ]
+            }
+        ]
     }
         
 }
