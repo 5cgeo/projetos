@@ -638,6 +638,56 @@ var PROJECTS = {
                 ]
             }
         ]
+    },
+    'pddmt-2022-2': {
+        title: 'Plano de Desenvolvimento da Doutrina Militar Terrestre 2022 1:100.000/1:250.000',
+        legend: [1,2,5,6,3],
+        description: `O objetivo do presente projeto é elaborar dados geoespaciais nas escalas 1:100.000 e 1:250.000 para suprir a demanda dos Comandos Militares de Área a serem utilizados em preparo, emprego e doutrina da F Ter.`,
+        lotes: [
+            {
+                name: 'pddmt-2022-2',
+                subtitle: '',
+                zoom: [
+                    [-47.6020, -21.6218],
+                    [-39.9133, -24.9867]
+                ],
+                styles: [
+                    {
+                        'id': 'pddmt-2022-2-fill',
+                        'source': 'pddmt-2022-2',
+                        'type': 'fill',
+                        'layout': {},
+                        'paint': {
+                            'fill-opacity': 0.9
+                        }
+                    },
+                    {
+                        'id': 'pddmt-2022-2-border',
+                        'source': 'pddmt-2022-2',
+                        'type': 'line',
+                        'layout': {},
+                        'paint': {
+                            'line-color': '#050505',
+                            'line-width': 0.5
+                        }
+                    },
+                    {
+                        'id': 'pddmt-2022-2-text',
+                        'source': 'pddmt-2022-2',
+                        "type": "symbol",
+                        "maxzoom": 10,
+                        "minzoom": 7.4,
+                        'layout': {
+                            'text-field': ['to-string', ['get', 'identificador']]
+
+                        },
+                        'paint': {
+
+                        }
+                    }
+                ]
+            }
+        ]
     }
         
 }
